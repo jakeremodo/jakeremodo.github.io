@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="backgrounds/">
+  <title>Profile</title>
+</head>
+
+<body>
+  <button class="tablink" onclick="openPage('Home', this, 'inherit')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('Information', this, 'inherit')">Information<i class="fa-address-book"></i></button>
+  <button class="tablink" onclick="openPage('sw', this, 'inherit')">S/W</button>
+  <button class="tablink" onclick="openPage('Future-Job', this, 'inherit')">Future-Job</button>
+  
+  <div id="Home" class="tabcontent">    
+    <h1>
+      <div id="me">
+        <img src="me.jpg" alt="jake" width="370" height="500">
+      </div>  
+    </h1>  
+    <h2>
+      <div id="intro">
+      Hello!!! I'm Jeiku (Jake)!
+      </div>
+    </h2>
+        <div id="para1">
+          <p>I'm Jake. A BSIT Student. A teenager. A Gamer. <br> And Welcome to my First ever Website!! </p>
+        </div>
+  </div>
+  
+  <div id="Information" class="tabcontent">
+    <h1>
+      <div id="aboutme">
+      About Me 
+      </div>
+      <div id="me1">
+        <img src="me1.jpg" alt="jake" height="550px" width="380px">
+      </div>
+    </h1>
+    <p>
+      <div id="info">
+          <p>NAME: JAKE E. REMODO</p>
+          <p>AGE: 18 YRS OLD</p>
+          <p>BIRTHDAY: OCTOBER 24, 2003</p>
+          <p>HOBBIES:<br> THERE ARE A LOT OF THINGS THAT I LIKE DOING. I LIKE PLAYING GAMES,<br>LISTENING TO MUSIC, SEARCHING FOR KNOWLEDGE ABOUT DIFFERENT STUFFS,<br> WATCHING MOVIES, ANIMES, AND SOMETIMES A TV SERIES ONLINE.<br> I ALSO LIKE READING A MANGA OR MANHWA AND SOMETIMES WHEN<br> I HAVE  ALOT OF TIME I READ LIGHT NOVELS </p>
+        <p>SKILLS</p>
+        <ul>
+          <li>GOOD MEMORY</li>
+          <li>CAN TYPE FAST</li>
+          <li>CAN USE AND PLAY FLUTE</li>
+          <li>CAN RIDE A BIKE</li>
+          <li>GAMING</li>
+          <li>DOESNT GET TIRED EASILY</li>
+          <li>QUICK LEARNER</li>
+          <li>CARING</li>
+          <li>PATIENCE</li>
+          <li>HONEST</li>
+          <li>CAN  DO MULTI-TASK</li>
+          <li>FAST READER</li>
+        </ul>
+        <p>FAMILY BACKGROUND:<br> IM THE YOUNGES SON. <br> I LIVE WITH MY PARENTS AND <br> I HAVE AN OLDER BROTHER</p>
+      </div>
+    </p>  
+  </div>
+  
+  <div id="sw" class="tabcontent">
+    <div id="str">
+      <h1>STRENGTHS</h1>
+    </div>
+    <div id="strs">  
+      <ul>
+          <li>Committed</li>
+          <li>Disciplined</li>
+          <li>Honest</li>
+          <li>Respectful</li>
+          <li>Enthusiastic</li>
+          <li>Determined</li>
+        </ul>
+    </div>
+    <div id="weak">
+      <h2>WEAKNESS</h2>
+    </div>
+    <div id="weakness">  
+        <ul>
+          <li>Shy</li>
+          <li>Get bored easily</li>
+          <li>Public speaking</li>
+          <li>Lack of confidence</li>
+          <li>Lack of experience</li>
+        </ul>
+    </div>
+  </div>
+  
+  <div id="Future-Job" class="tabcontent">
+    <div id="fb">
+      <h1>FUTURE JOB</h1>
+    </div>
+    <div id="fbp">
+      <p>At this time. I currently don't have<br> Any idea what will my future job be.<br> I'm not sure if I'm going to be a<br> Web developer or a Computer Programmer.<br> But nevertheless I still want to get a job on a Good Company<br> where I will be able to learn a lot of new things. </p>
+    </div>
+  </div>
+
+  
+  <script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+  document.getElementById("defaultOpen").click();
+  </script>
+     
+  </body>
+
+
+
+</html>

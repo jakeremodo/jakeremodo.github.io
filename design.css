@@ -1,0 +1,133 @@
+body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+
+}
+.tablink {
+  background-color: inherit;
+  color: rgb(0, 0, 0);
+  float: left;
+  border: black;
+  outline: black;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 25%;
+}
+.tablink:hover {
+  background-color: rgba(68, 180, 162, 0.432);
+}
+.tabcontent {
+  color: rgb(0, 0, 0);
+  display: flex;
+  padding: 100px 20px;
+  height: 100%;
+  background-size: 100%;
+}
+#Home {
+  background: url(home.png); 
+  background-repeat: repeat-y;
+  background-size: auto;
+  font-size: 38px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+#me {
+  position: relative;
+  float: right;
+  right: 150px;
+}
+#me1{
+  float: right;
+  position: relative;
+  right: 90px;
+  bottom: 20px;
+}
+#intro {
+  position: relative;
+
+  left: 50px;
+  top: 150px;
+  text-align: inherit;
+}
+#para1 {
+  position: relative;
+  left: 50px;
+  top: 170px;
+}
+#Information{
+  background: url(info.png); 
+  background-repeat: auto;
+  background-size: auto;
+  height: 170%;
+}
+#aboutme{
+  position: relative;
+  float: left;
+  left: 150px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+#info{
+  float: left;
+  position: relative;
+  right: 30px;
+  top: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: justify;
+  
+}
+#sw {
+  background: url(sw.png); 
+  background-repeat: repeat;
+  background-size: auto;
+}
+#str{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+#strs{
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  list-style-type: none;
+}
+#weak{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center; 
+}
+#weakness{
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+#Future-Job {
+  background: url(future.png); 
+  background-repeat: repeat;
+  background-size: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+#fb{
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+}
+#fbp{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 37px;
+}
